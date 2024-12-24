@@ -1,5 +1,7 @@
 # BrickBreaker++: A Modern Take on the Classic Arkanoid Game
 
+![Gameplay Screenshot](media/game_screenshot.jpg)
+
 ## Overview
 
 This project is a modern take on the classic "Arkanoid" game, implemented using Java and the `DanoGameLab`
@@ -13,25 +15,22 @@ project showcases object-oriented design principles and advanced programming pat
 2. [Game Description](#game-description)
 3. [Key Features](#key-features)
 4. [Code Structure and Key Components](#code-structure-and-key-components)
-
-- [Packages](#packages)
-    - [`brick_strategies`](#brick_strategies)
-    - [`gameobjects`](#gameobjects)
-- [Key Classes](#key-classes)
-    - [`BrickerGameManager`](#bricker-game-manager)
-    - [`CollisionStrategy` (Interface)](#collisionstrategy-interface)
-    - [`Ball`](#ball)
-    - [`Paddle`](#paddle)
-    - [`Brick`](#brick)
-    - [`Life Counters`](#life-counters)
-- [Additional Components](#additional-components)
-
+   - [Packages](#packages)
+       - [`brick_strategies`](#brick_strategies)
+       - [`gameobjects`](#gameobjects)
+   - [Key Classes](#key-classes)
+       - [`BrickerGameManager`](#brickergamemanager)
+       - [`CollisionStrategy` (Interface)](#collisionstrategy-interface)
+       - [`Ball`](#ball)
+       - [`Paddle`](#paddle)
+       - [`Brick`](#brick)
+       - [Life Counters](#life-counters)
+       - [Additional Components](#additional-components)
 5. [How to Run](#how-to-run)
-
-- [Steps to Run](#steps-to-run)
-- [Game Instructions](#game-instructions)
-    - [Controls](#controls)
-    - [Gameplay Mechanics](#gameplay-mechanics)
+   - [Steps to Run](#steps-to-run)
+   - [Game Instructions](#game-instructions)
+       - [Controls](#controls)
+       - [Gameplay Mechanics](#gameplay-mechanics)
 
 ## Game Description
 
@@ -60,9 +59,12 @@ The game concludes when all bricks are destroyed, or the player loses all lives.
 
 ### Packages
 
-- **`brick_strategies`**: Contains logic for handling brick collisions, utilizing design patterns like the
-  decorator and factory patterns.
-- **`gameobjects`**: Defines core game elements such as the ball, paddle, bricks, and life counters.
+#### `brick_strategies`
+- Contains logic for handling brick collisions, utilizing design patterns like the decorator and factory 
+  patterns.
+
+#### `gameobjects`
+- Defines core game elements such as the ball, paddle, bricks, and life counters.
 
 ### Key Classes
 
@@ -96,7 +98,7 @@ The game concludes when all bricks are destroyed, or the player loses all lives.
 - **`GraphicLifeCounter`**: Displays remaining lives graphically.
 - **`NumericLifeCounter`**: Displays remaining lives numerically.
 
-### Additional Components
+#### Additional Components
 
 - **`Puck`**: A secondary ball-like object with unique behavior.
 - **`RemoveBrickStrategyDecorator`**: Enhances collision strategies using the decorator pattern.
@@ -111,13 +113,14 @@ The game concludes when all bricks are destroyed, or the player loses all lives.
 
 ### Game Instructions
 
-- **Controls**:
-    - **Left/Right Arrow**: Move the paddle left or right.
+#### Controls
+- **Left/Right Arrow**: Move the paddle left or right.
 
-- **Gameplay Mechanics**:
-    - **Brick Destruction**: The ball breaks bricks upon collision. Each collision may trigger special events
-      or effects, such as adding paddles or spawning additional balls.
-    - **Winning Condition**: Break all bricks to win the game.
-    - **Losing Condition**: Lose all lives (tracked by life counters) if the ball falls off the screen.
-    - **Special Features**: Some bricks may trigger dynamic changes like camera shifts, paddle resizing, or
-      introducing new pucks/balls.
+#### Gameplay Mechanics
+
+- **Brick Destruction**: The ball breaks bricks upon collision. Each collision may trigger special events
+  or effects, such as adding paddles or spawning additional balls.
+- **Winning Condition**: Break all bricks to win the game.
+- **Losing Condition**: Lose all lives (tracked by life counters) if the ball falls off the screen.
+- **Special Features**: Some bricks may trigger dynamic changes like camera shifts, paddle resizing, or
+  introducing new pucks/balls.
