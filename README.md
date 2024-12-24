@@ -1,6 +1,6 @@
 # BrickBreaker++: A Modern Take on the Classic Arkanoid Game
 
-![Gameplay Screenshot](media/game_screenshot.jpg)
+![Gameplay Screenshot](/media/game_screenshot.jpg)
 
 ## Overview
 
